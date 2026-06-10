@@ -1,10 +1,10 @@
 cask "ab-download-manager" do
   on_macos do
     arch arm: "arm64", intel: "x64"
+    version "1.9.0"
+    sha256 arm:   "a746584eb7bbb71ecd1e42126e12451c9d31042ac2be994120c5c82ac00122a8",
+           intel: "db499748b87f97b53e5fb104fbc1d998f1cb943f647e03049bcd01bb31339a2b"
 
-    version "1.8.7"
-    sha256 arm:   "10a31709397655355b1fc0a72b5493eadd9ceabf6b18aa2ea93216126da3ef78",
-           intel: "9b54b98a79aee81e9f30130d0e677bb7ac440eed3a1fa835d006b2cf9f47b96e"
 
     url "https://github.com/amir1376/ab-download-manager/releases/download/v#{version}/ABDownloadManager_#{version}_mac_#{arch}.dmg",
         verified: "github.com/amir1376/ab-download-manager/"
@@ -38,7 +38,7 @@ cask "ab-download-manager" do
   end
 
   on_linux do
-    version "1.8.7"
+    version "1.9.0"
     sha256 :no_check
 
     url "https://raw.githubusercontent.com/amir1376/ab-download-manager/master/scripts/install.sh"
