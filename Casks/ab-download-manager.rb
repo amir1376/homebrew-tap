@@ -21,10 +21,10 @@ cask "ab-download-manager" do
 
     app "ABDownloadManager.app"
 
-    uninstall_postflight do
-      system_command "/usr/bin/pkill",
-                     args:         ["-f", "ABDownloadManager.app"],
-                     must_succeed: false
+    uninstall_postflight_steps do
+      run "/usr/bin/pkill",
+          args:         ["-f", "ABDownloadManager.app"],
+          must_succeed: false
     end
 
     uninstall quit:       "com.abdownloadmanager.desktop",
