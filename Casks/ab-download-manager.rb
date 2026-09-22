@@ -6,8 +6,7 @@ cask "ab-download-manager" do
     sha256 arm:   "94cb1a61db6c7f78748052057a8e4d8e8bcaa91a65e0a4cbd4da647bb1e88570",
            intel: "de32c670dd5b9c9d32162831f08d85b8007c0b0a37e5b7bb078421d54fc73cbb"
 
-    url "https://github.com/amir1376/ab-download-manager/releases/download/v#{version}/ABDownloadManager_#{version}_mac_#{arch}.dmg",
-        verified: "github.com/amir1376/ab-download-manager/"
+    url "https://github.com/amir1376/ab-download-manager/releases/download/v#{version}/ABDownloadManager_#{version}_mac_#{arch}.dmg"
     name "AB Download Manager"
     desc "Download manager that speeds up your downloads"
     homepage "https://abdownloadmanager.com/"
